@@ -1,14 +1,14 @@
 def solicitar_vector(longitud):
     vector = []
     for i in range(longitud):
-        valor = float(input(f"Porfavor introduce el valor {i + 1} del vector"/n"-"))
+        valor = float(input(f"Porfavor introduce el valor {i + 1} del vector\n-"))
         vector.append(valor)
     return vector
 
 def producto_escalar(vector1, vector2):
     return sum(x * y for x, y in zip(vector1, vector2))
 
-n = int(input("Porfavor introduce la longitud de los vectores"/n"-"))
+n = int(input("Porfavor introduce la longitud de los vectores\n-"))
 
 print("Datos del primer vector"/n"-")
 vector1 = solicitar_vector(n)
@@ -23,7 +23,7 @@ def crear_matriz(filas, columnas):
     for i in range(filas):
         fila = []
         for j in range(columnas):
-            valor = float(input(f"Introduce el elemento [{i+1}, {j+1}] "/n"-"))
+            valor = float(input(f"Introduce el elemento [{i+1}, {j+1}]\n-"))
             fila.append(valor)
         matriz.append(fila)
     return matriz
@@ -46,10 +46,10 @@ def multiplicar_matrices(A, B):
         resultado.append(fila_resultado)
     return resultado
 
-filas_A = int(input("Porfavor introduce el número de filas de la matriz A "/n"-"))
-columnas_A = int(input("Porfavor introduce el número de columnas de la matriz A" /n"-"))
-filas_B = int(input("Porfavor introduce el número de filas de la matriz B"/n"-"))
-columnas_B = int(input("Porfavor introduce el número de columnas de la matriz B"/n"-"))
+filas_A = int(input("Porfavor introduce el número de filas de la matriz A\n-"))
+columnas_A = int(input("Porfavor introduce el número de columnas de la matriz A\n-"))
+filas_B = int(input("Porfavor introduce el número de filas de la matriz B\n-"))
+columnas_B = int(input("Porfavor introduce el número de columnas de la matriz B\n-"))
 
 print("Datos para la matriz A:")
 A = crear_matriz(filas_A, columnas_A)
